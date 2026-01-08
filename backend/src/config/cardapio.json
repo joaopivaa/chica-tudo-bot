@@ -1,0 +1,191 @@
+{
+  "lanchonete": {
+    "nome": "Chica Tudo Lanches",
+    "telefone": "11999999999",
+    "horario_funcionamento": {
+      "abertura": "18:00",
+      "fechamento": "23:00",
+      "dias_semana": ["seg", "ter", "qua", "qui", "sex", "sab"]
+    }
+  },
+  
+  "lanches": [
+    {
+      "id": 1,
+      "codigo": "XSALADA",
+      "nome": "X-Salada",
+      "descricao": "Hambúrguer, queijo, alface, tomate e molho",
+      "preco": 12.00,
+      "ingredientes": ["pao", "hamburguer", "queijo", "alface", "tomate"],
+      "tempo_preparo": 15,
+      "permite_observacao": true,
+      "ativo": true
+    },
+    {
+      "id": 2,
+      "codigo": "XBURGUER",
+      "nome": "X-Burguer",
+      "descricao": "Hambúrguer e queijo no pão",
+      "preco": 10.00,
+      "ingredientes": ["pao", "hamburguer", "queijo"],
+      "tempo_preparo": 12,
+      "permite_observacao": true,
+      "ativo": true
+    },
+    {
+      "id": 3,
+      "codigo": "XBACON",
+      "nome": "X-Bacon",
+      "descricao": "Hambúrguer, queijo, bacon, alface e tomate",
+      "preco": 15.00,
+      "ingredientes": ["pao", "hamburguer", "queijo", "bacon", "alface", "tomate"],
+      "tempo_preparo": 18,
+      "permite_observacao": true,
+      "ativo": true
+    },
+    {
+      "id": 4,
+      "codigo": "XTUDO",
+      "nome": "X-Tudo",
+      "descricao": "Hambúrguer, queijo, bacon, ovo, presunto, alface, tomate e milho",
+      "preco": 20.00,
+      "ingredientes": ["pao", "hamburguer", "queijo", "bacon", "ovo", "presunto", "alface", "tomate", "milho"],
+      "tempo_preparo": 22,
+      "permite_observacao": true,
+      "ativo": true
+    },
+    {
+      "id": 5,
+      "codigo": "XFRANGO",
+      "nome": "X-Frango",
+      "descricao": "Frango desfiado, queijo, milho e batata palha",
+      "preco": 13.00,
+      "ingredientes": ["pao", "frango", "queijo", "milho", "batata_palha"],
+      "tempo_preparo": 15,
+      "permite_observacao": true,
+      "ativo": true
+    },
+    {
+      "id": 6,
+      "codigo": "XEGG",
+      "nome": "X-Egg",
+      "descricao": "Hambúrguer, queijo, ovo e presunto",
+      "preco": 14.00,
+      "ingredientes": ["pao", "hamburguer", "queijo", "ovo", "presunto"],
+      "tempo_preparo": 16,
+      "permite_observacao": true,
+      "ativo": true
+    },
+    {
+      "id": 7,
+      "codigo": "VEGETARIANO",
+      "nome": "Vegetariano",
+      "descricao": "Hambúrguer de soja, queijo, alface, tomate e cenoura ralada",
+      "preco": 13.50,
+      "ingredientes": ["pao", "hamburguer_soja", "queijo", "alface", "tomate", "cenoura"],
+      "tempo_preparo": 15,
+      "permite_observacao": true,
+      "ativo": true,
+      "tags": ["vegetariano"]
+    }
+  ],
+  
+  "bebidas": [
+    {
+      "id": 1,
+      "codigo": "COCA_LATA",
+      "nome": "Coca-Cola Lata",
+      "tamanho": "350ml",
+      "preco": 5.00,
+      "gelada": true,
+      "ativo": true
+    },
+    {
+      "id": 2,
+      "codigo": "COCA_2L",
+      "nome": "Coca-Cola 2L",
+      "tamanho": "2L",
+      "preco": 10.00,
+      "gelada": false,
+      "ativo": true
+    },
+    {
+      "id": 3,
+      "codigo": "GUARANA_LATA",
+      "nome": "Guaraná Antarctica Lata",
+      "tamanho": "350ml",
+      "preco": 4.50,
+      "gelada": true,
+      "ativo": true
+    },
+    {
+      "id": 4,
+      "codigo": "SUCO_LARANJA",
+      "nome": "Suco de Laranja Natural",
+      "tamanho": "300ml",
+      "preco": 6.00,
+      "gelada": true,
+      "ativo": true,
+      "tags": ["natural"]
+    },
+    {
+      "id": 5,
+      "codigo": "AGUA_MINERAL",
+      "nome": "Água Mineral",
+      "tamanho": "500ml",
+      "preco": 3.00,
+      "gelada": true,
+      "ativo": true
+    },
+    {
+      "id": 6,
+      "codigo": "SUCO_MARACUJA",
+      "nome": "Suco de Maracujá Natural",
+      "tamanho": "300ml",
+      "preco": 6.50,
+      "gelada": true,
+      "ativo": true,
+      "tags": ["natural"]
+    }
+  ],
+  
+  "configuracoes_pedido": {
+    "max_itens_por_pedido": 10,
+    "max_tentativas_erro": 3,
+    "timeout_sessao_minutos": 15,
+    "permite_observacoes": true,
+    "max_caracteres_observacao": 200
+  },
+  
+  "entrega": {
+    "taxa_padrao": 5.00,
+    "pedido_minimo": 15.00,
+    "tempo_estimado_minutos": 45,
+    "bairros_atendidos": [
+      "Centro",
+      "Jardins",
+      "Vila Nova",
+      "Boa Vista",
+      "Santa Cruz"
+    ]
+  },
+  
+  "mensagens": {
+    "boas_vindas": "Olá! 👋 Bem-vindo(a) à *Chica Tudo Lanches*!\n\nEstou aqui para anotar seu pedido. 🍔",
+    "cardapio_intro": "📋 Nosso cardápio:",
+    "selecao_lanches": "Digite o *número* do lanche que deseja (ex: 1 para X-Salada):\n\nOu digite o nome do lanche diretamente!",
+    "observacao_lanche": "Alguma observação para este lanche? 📝\n(Ex: sem cebola, ponto da carne, etc)\n\n_Digite *não* ou *0* se não tiver._",
+    "adicionar_mais": "Deseja adicionar mais algum lanche? 🍔\n\nDigite *sim* para continuar ou *não* para finalizar.",
+    "bebidas": "Quer alguma bebida? 🥤",
+    "cardapio_bebidas": "📋 Nossas bebidas:",
+    "tipo_entrega": "Como deseja receber seu pedido? 🚗\n\n*1* - Retirar no local\n*2* - Entrega (taxa de R$ {taxa})",
+    "endereco_entrega": "Por favor, informe seu endereço completo:\n\n_Rua, número, bairro e ponto de referência_",
+    "forma_pagamento": "Qual a forma de pagamento? 💳\n\n*1* - Dinheiro 💵\n*2* - PIX 📱\n*3* - Cartão 💳",
+    "troco": "Precisa de troco? 💰\n\nSe sim, digite o valor que vai pagar.\nSe não precisa, digite *0* ou *não*.",
+    "confirmacao": "✅ *Confirme seu pedido:*\n\n{resumo_pedido}\n\n━━━━━━━━━━━━━━━━\n💰 *Total: R$ {total}*\n━━━━━━━━━━━━━━━━\n\nDigite *OK* para confirmar ou *CANCELAR* para desistir.",
+    "pedido_confirmado": "🎉 *Pedido #{numero} confirmado!*\n\nEstamos preparando com carinho!\n⏱ Tempo estimado: *{tempo} minutos*\n\nVocê receberá uma mensagem quando estiver pronto! 😊",
+    "pedido_pronto": "✅ Seu pedido *#{numero}* está pronto!\n\n{tipo_entrega_msg}\n\nObrigado pela preferência! 🙏",
+    "erro_generico": "Ops! Não entendi. 😅\n\nTente novamente ou digite *ajuda*.",
+    "fora_horario": "⏰ Desculpe, estamos fechados agora!\n\nNosso horário de funcionamento:\n{horarios}\n\nVolte depois! 😊"
+  }
+}
