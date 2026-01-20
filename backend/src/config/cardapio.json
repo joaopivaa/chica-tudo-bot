@@ -1,191 +1,491 @@
 {
   "lanchonete": {
-    "nome": "Chica Tudo Lanches",
-    "telefone": "11999999999",
+    "nome": "Chica-Tudo",
+    "telefone": "18998119097",
     "horario_funcionamento": {
       "abertura": "18:00",
       "fechamento": "23:00",
       "dias_semana": ["seg", "ter", "qua", "qui", "sex", "sab"]
     }
   },
-  
+
   "lanches": [
     {
       "id": 1,
-      "codigo": "XSALADA",
-      "nome": "X-Salada",
-      "descricao": "Hambúrguer, queijo, alface, tomate e molho",
-      "preco": 12.00,
-      "ingredientes": ["pao", "hamburguer", "queijo", "alface", "tomate"],
-      "tempo_preparo": 15,
-      "permite_observacao": true,
-      "ativo": true
+      "codigo": "HD001",
+      "nome": "Hot Simples",
+      "categoria": "Hot Dog",
+      "preco": 13.00,
+      "descricao": "Maionese, ketchup e mostarda, alface, tomate, cenoura, salsicha e batata palha"
     },
     {
       "id": 2,
-      "codigo": "XBURGUER",
-      "nome": "X-Burguer",
-      "descricao": "Hambúrguer e queijo no pão",
-      "preco": 10.00,
-      "ingredientes": ["pao", "hamburguer", "queijo"],
-      "tempo_preparo": 12,
-      "permite_observacao": true,
-      "ativo": true
+      "codigo": "HD002",
+      "nome": "Hot Duplo",
+      "categoria": "Hot Dog",
+      "preco": 17.00,
+      "descricao": "Maionese, ketchup e mostarda, alface, tomate, cenoura, 2 salsichas e batata palha"
     },
     {
       "id": 3,
-      "codigo": "XBACON",
-      "nome": "X-Bacon",
-      "descricao": "Hambúrguer, queijo, bacon, alface e tomate",
-      "preco": 15.00,
-      "ingredientes": ["pao", "hamburguer", "queijo", "bacon", "alface", "tomate"],
-      "tempo_preparo": 18,
-      "permite_observacao": true,
-      "ativo": true
+      "codigo": "HD003",
+      "nome": "Hot Frango",
+      "categoria": "Hot Dog",
+      "preco": 17.00,
+      "descricao": "Maionese, ketchup e mostarda, alface, tomate, cenoura, 2 salsichas, frango e batata palha"
     },
     {
       "id": 4,
-      "codigo": "XTUDO",
-      "nome": "X-Tudo",
-      "descricao": "Hambúrguer, queijo, bacon, ovo, presunto, alface, tomate e milho",
-      "preco": 20.00,
-      "ingredientes": ["pao", "hamburguer", "queijo", "bacon", "ovo", "presunto", "alface", "tomate", "milho"],
-      "tempo_preparo": 22,
-      "permite_observacao": true,
-      "ativo": true
+      "codigo": "HD004",
+      "nome": "Hot Bacon",
+      "categoria": "Hot Dog",
+      "preco": 17.00,
+      "descricao": "Maionese, ketchup e mostarda, alface, tomate, cenoura, 2 salsichas, bacon e batata palha"
     },
     {
       "id": 5,
-      "codigo": "XFRANGO",
-      "nome": "X-Frango",
-      "descricao": "Frango desfiado, queijo, milho e batata palha",
-      "preco": 13.00,
-      "ingredientes": ["pao", "frango", "queijo", "milho", "batata_palha"],
-      "tempo_preparo": 15,
-      "permite_observacao": true,
-      "ativo": true
+      "codigo": "HD005",
+      "nome": "Hot Calabresa",
+      "categoria": "Hot Dog",
+      "preco": 17.00,
+      "descricao": "Maionese, ketchup e mostarda, alface, tomate, cenoura, 2 salsichas, calabresa e batata palha"
     },
     {
       "id": 6,
-      "codigo": "XEGG",
-      "nome": "X-Egg",
-      "descricao": "Hambúrguer, queijo, ovo e presunto",
-      "preco": 14.00,
-      "ingredientes": ["pao", "hamburguer", "queijo", "ovo", "presunto"],
-      "tempo_preparo": 16,
-      "permite_observacao": true,
-      "ativo": true
+      "codigo": "HD006",
+      "nome": "Hot Catupiry",
+      "categoria": "Hot Dog",
+      "preco": 17.00,
+      "descricao": "Maionese, ketchup e mostarda, alface, tomate, cenoura, 2 salsichas, catupiry e batata palha"
     },
     {
       "id": 7,
-      "codigo": "VEGETARIANO",
-      "nome": "Vegetariano",
-      "descricao": "Hambúrguer de soja, queijo, alface, tomate e cenoura ralada",
-      "preco": 13.50,
-      "ingredientes": ["pao", "hamburguer_soja", "queijo", "alface", "tomate", "cenoura"],
-      "tempo_preparo": 15,
-      "permite_observacao": true,
-      "ativo": true,
-      "tags": ["vegetariano"]
+      "codigo": "HD007",
+      "nome": "Hot Presunto e Queijo",
+      "categoria": "Hot Dog",
+      "preco": 17.00,
+      "descricao": "Maionese, ketchup e mostarda, alface, tomate, cenoura, 2 salsichas, presunto, queijo e batata palha"
+    },
+    {
+      "id": 8,
+      "codigo": "HD008",
+      "nome": "Hot Tudo",
+      "categoria": "Hot Dog",
+      "preco": 20.00,
+      "descricao": "Maionese, ketchup e mostarda, alface, tomate, cenoura, 2 salsichas, calabresa, bacon, frango e batata palha"
+    },
+    {
+      "id": 9,
+      "codigo": "HD009",
+      "nome": "Hot Nordestino",
+      "categoria": "Hot Dog",
+      "preco": 17.00,
+      "descricao": "Maionese, ketchup e mostarda, alface, tomate, cenoura, 2 salsichas, carne moída e batata palha"
+    },
+    {
+      "id": 10,
+      "codigo": "PS001",
+      "nome": "Pastel de Carne",
+      "categoria": "Pastel",
+      "preco": 12.00
+    },
+    {
+      "id": 11,
+      "codigo": "PS002",
+      "nome": "Pastel de Carne com Queijo",
+      "categoria": "Pastel",
+      "preco": 14.00
+    },
+    {
+      "id": 12,
+      "codigo": "PS003",
+      "nome": "Pastel de Frango",
+      "categoria": "Pastel",
+      "preco": 12.00
+    },
+    {
+      "id": 13,
+      "codigo": "PS004",
+      "nome": "Pastel de Frango com Catupiry",
+      "categoria": "Pastel",
+      "preco": 15.00
+    },
+    {
+      "id": 14,
+      "codigo": "PS005",
+      "nome": "Pastel de Queijo",
+      "categoria": "Pastel",
+      "preco": 12.00
+    },
+    {
+      "id": 15,
+      "codigo": "PS006",
+      "nome": "Pastel de Presunto e Queijo",
+      "categoria": "Pastel",
+      "preco": 12.00
+    },
+    {
+      "id": 16,
+      "codigo": "PS007",
+      "nome": "Pastel de Pizza",
+      "categoria": "Pastel",
+      "preco": 12.00
+    },
+    {
+      "id": 17,
+      "codigo": "PD001",
+      "nome": "Pastel Romeu e Julieta",
+      "categoria": "Pastel Doce",
+      "preco": 15.00
+    },
+    {
+      "id": 18,
+      "codigo": "PD002",
+      "nome": "Pastel de Nutella",
+      "categoria": "Pastel Doce",
+      "preco": 15.00
+    },
+    {
+      "id": 19,
+      "codigo": "PC001",
+      "nome": "Porção de Fritas",
+      "categoria": "Porção",
+      "preco": 20.00,
+      "descricao": "Batata frita"
+    },
+    {
+      "id": 20,
+      "codigo": "PC002",
+      "nome": "Porção de Calabresa",
+      "categoria": "Porção",
+      "preco": 30.00,
+      "descricao": "Calabresa acebolada na chapa"
+    },
+    {
+      "id": 21,
+      "codigo": "PC003",
+      "nome": "Porção de Frango à Passarinho",
+      "categoria": "Porção",
+      "preco": 30.00
+    },
+    {
+      "id": 22,
+      "codigo": "PC004",
+      "nome": "Porção de Filé Acebolado",
+      "categoria": "Porção",
+      "preco": 40.00
+    },
+    {
+      "id": 23,
+      "codigo": "PC005",
+      "nome": "Porção de Frios",
+      "categoria": "Porção",
+      "preco": 30.00,
+      "descricao": "Presunto e queijo"
+    },
+    {
+      "id": 24,
+      "codigo": "HB001",
+      "nome": "Bauru",
+      "categoria": "Hambúrguer",
+      "preco": 15.00,
+      "descricao": "Maionese, tomate, presunto e queijo",
+      "adicionais": true
+    },
+    {
+      "id": 25,
+      "codigo": "HB002",
+      "nome": "X-Bacon",
+      "categoria": "Hambúrguer",
+      "preco": 23.00,
+      "descricao": "Hambúrguer artesanal, bacon, queijo, maionese e tomate",
+      "adicionais": true
+    },
+    {
+      "id": 26,
+      "codigo": "HB003",
+      "nome": "X-Burguer",
+      "categoria": "Hambúrguer",
+      "preco": 19.00,
+      "descricao": "Hambúrguer artesanal, queijo, tomate e maionese",
+      "adicionais": true
+    },
+    {
+      "id": 27,
+      "codigo": "HB004",
+      "nome": "X-Calabresa",
+      "categoria": "Hambúrguer",
+      "preco": 23.00,
+      "descricao": "Hambúrguer artesanal, calabresa, queijo, alface, tomate e maionese",
+      "adicionais": true
+    },
+    {
+      "id": 28,
+      "codigo": "HB005",
+      "nome": "X-Egg",
+      "categoria": "Hambúrguer",
+      "preco": 23.00,
+      "descricao": "Hambúrguer artesanal, ovo, queijo, alface, tomate e maionese",
+      "adicionais": true
+    },
+    {
+      "id": 29,
+      "codigo": "HB006",
+      "nome": "X-Salada",
+      "categoria": "Hambúrguer",
+      "preco": 19.00,
+      "descricao": "Hambúrguer artesanal, alface, tomate, queijo e maionese",
+      "adicionais": true
+    },
+    {
+      "id": 30,
+      "codigo": "HB007",
+      "nome": "Misto",
+      "categoria": "Hambúrguer",
+      "preco": 15.00,
+      "descricao": "Presunto, queijo e maionese",
+      "adicionais": true
+    },
+    {
+      "id": 31,
+      "codigo": "HB008",
+      "nome": "X-Tudo",
+      "categoria": "Hambúrguer",
+      "preco": 31.00,
+      "descricao": "Hambúrguer artesanal, calabresa, bacon, ovo, presunto, queijo, alface, tomate e maionese",
+      "adicionais": true
+    },
+    {
+      "id": 32,
+      "codigo": "HB009",
+      "nome": "X-Tudão",
+      "categoria": "Hambúrguer",
+      "preco": 36.00,
+      "descricao": "Pão francês, hambúrguer artesanal, calabresa, bacon, ovo, presunto, queijo, salsicha, frango desfiado, alface, tomate e maionese",
+      "adicionais": true
+    },
+    {
+      "id": 33,
+      "codigo": "FC001",
+      "nome": "X-Filé Carne",
+      "categoria": "Filé de Carne",
+      "preco": 31.00,
+      "descricao": "Filé de carne, alface, tomate e maionese",
+      "adicionais": true
+    },
+    {
+      "id": 34,
+      "codigo": "FC002",
+      "nome": "X-Filé com Queijo",
+      "categoria": "Filé de Carne",
+      "preco": 35.00,
+      "descricao": "Filé de carne, queijo, alface, tomate e maionese",
+      "adicionais": true
+    },
+    {
+      "id": 35,
+      "codigo": "FC003",
+      "nome": "X-Filé Calabresa",
+      "categoria": "Filé de Carne",
+      "preco": 35.00,
+      "descricao": "Filé de carne, calabresa, queijo, alface, tomate e maionese",
+      "adicionais": true
+    },
+    {
+      "id": 36,
+      "codigo": "FC004",
+      "nome": "X-Filé Bacon",
+      "categoria": "Filé de Carne",
+      "preco": 35.00,
+      "descricao": "Filé de carne, bacon, queijo, alface, tomate e maionese",
+      "adicionais": true
+    },
+    {
+      "id": 37,
+      "codigo": "FC005",
+      "nome": "X-Filé Egg",
+      "categoria": "Filé de Carne",
+      "preco": 35.00,
+      "descricao": "Filé de carne, ovo, queijo, alface, tomate e maionese",
+      "adicionais": true
+    },
+    {
+      "id": 38,
+      "codigo": "FC006",
+      "nome": "X-Filé Tudo",
+      "categoria": "Filé de Carne",
+      "preco": 43.00,
+      "descricao": "Filé de carne, calabresa, bacon, ovo, queijo, presunto, alface, tomate e maionese",
+      "adicionais": true
+    },
+    {
+      "id": 39,
+      "codigo": "FF001",
+      "nome": "X-Filé Frango",
+      "categoria": "Filé de Frango",
+      "preco": 27.00,
+      "descricao": "Filé de frango, alface, tomate e maionese",
+      "adicionais": true
+    },
+    {
+      "id": 40,
+      "codigo": "FF002",
+      "nome": "X-Frango com Queijo",
+      "categoria": "Filé de Frango",
+      "preco": 31.00,
+      "descricao": "Filé de frango, queijo, alface, tomate e maionese",
+      "adicionais": true
+    },
+    {
+      "id": 41,
+      "codigo": "FF003",
+      "nome": "X-Frango Calabresa",
+      "categoria": "Filé de Frango",
+      "preco": 35.00,
+      "descricao": "Filé de frango, calabresa, queijo, alface, tomate e maionese",
+      "adicionais": true
+    },
+    {
+      "id": 42,
+      "codigo": "FF004",
+      "nome": "X-Frango Bacon",
+      "categoria": "Filé de Frango",
+      "preco": 35.00,
+      "descricao": "Filé de frango, bacon, queijo, alface, tomate e maionese",
+      "adicionais": true
+    },
+    {
+      "id": 43,
+      "codigo": "FF005",
+      "nome": "X-Frango Egg",
+      "categoria": "Filé de Frango",
+      "preco": 35.00,
+      "descricao": "Filé de frango, ovo, queijo, alface, tomate e maionese",
+      "adicionais": true
+    },
+    {
+      "id": 44,
+      "codigo": "FF006",
+      "nome": "X-Frango Tudo",
+      "categoria": "Filé de Frango",
+      "preco": 39.00,
+      "descricao": "Filé de frango, calabresa, bacon, ovo, queijo, presunto, alface, tomate e maionese",
+      "adicionais": true
+    },
+    {
+      "id": 45,
+      "codigo": "ES001",
+      "nome": "X-Tudão no Prato",
+      "categoria": "Especial",
+      "preco": 65.00,
+      "descricao": "Pão torrado na chapa, alface, tomate, filé de carne, filé de frango, hambúrguer artesanal, salsicha, bacon, calabresa, ovo, presunto, queijo e catupiry"
+    },
+    {
+      "id": 46, 
+      "codigo": "ES002",
+      "nome": "Light",
+      "categoria": "Especial",
+      "preco": 16.00,
+      "descricao": "Alface, tomate, queijo e ovo"
     }
   ],
-  
+
   "bebidas": [
     {
       "id": 1,
-      "codigo": "COCA_LATA",
+      "codigo": "BE001",
       "nome": "Coca-Cola Lata",
-      "tamanho": "350ml",
       "preco": 5.00,
-      "gelada": true,
-      "ativo": true
+      "tamanho": "350ml"
     },
     {
       "id": 2,
-      "codigo": "COCA_2L",
+      "codigo": "BE002",
       "nome": "Coca-Cola 2L",
-      "tamanho": "2L",
       "preco": 10.00,
-      "gelada": false,
-      "ativo": true
+      "tamanho": "2L"
     },
     {
       "id": 3,
-      "codigo": "GUARANA_LATA",
-      "nome": "Guaraná Antarctica Lata",
-      "tamanho": "350ml",
+      "codigo": "BE003",
+      "nome": "Guaraná Lata",
       "preco": 4.50,
-      "gelada": true,
-      "ativo": true
+      "tamanho": "350ml"
     },
     {
       "id": 4,
-      "codigo": "SUCO_LARANJA",
-      "nome": "Suco de Laranja Natural",
-      "tamanho": "300ml",
+      "codigo": "BE004",
+      "nome": "Suco de Laranja",
       "preco": 6.00,
-      "gelada": true,
-      "ativo": true,
-      "tags": ["natural"]
+      "tamanho": "300ml",
+      "natural": true
     },
     {
       "id": 5,
-      "codigo": "AGUA_MINERAL",
+      "codigo": "BE005",
       "nome": "Água Mineral",
-      "tamanho": "500ml",
       "preco": 3.00,
-      "gelada": true,
-      "ativo": true
+      "tamanho": "500ml"
+    }
+  ],
+
+  "adicionais": [
+    {
+      "id": 1,
+      "nome": "Bacon",
+      "preco": 4.00
+    },
+    {
+      "id": 2,
+      "nome": "Ovo",
+      "preco": 4.00
+    },
+    {
+      "id": 3,
+      "nome": "Calabresa",
+      "preco": 4.00
+    },
+    {
+      "id": 4,
+      "nome": "Queijo",
+      "preco": 4.00
+    },
+    {
+      "id": 5,
+      "nome": "Cheddar",
+      "preco": 4.00
     },
     {
       "id": 6,
-      "codigo": "SUCO_MARACUJA",
-      "nome": "Suco de Maracujá Natural",
-      "tamanho": "300ml",
-      "preco": 6.50,
-      "gelada": true,
-      "ativo": true,
-      "tags": ["natural"]
+      "nome": "Catupiry",
+      "preco": 4.00
+    },
+    {
+      "id": 7,
+      "nome": "Milho",
+      "preco": 4.00
+    },
+    {
+      "id": 8,
+      "nome": "Cebola",
+      "preco": 4.00
     }
   ],
-  
-  "configuracoes_pedido": {
-    "max_itens_por_pedido": 10,
-    "max_tentativas_erro": 3,
-    "timeout_sessao_minutos": 15,
-    "permite_observacoes": true,
-    "max_caracteres_observacao": 200
+
+  "configuracoes": {
+    "taxa_entrega": 0.00,
+    "max_caracteres_observacao": 300
   },
-  
-  "entrega": {
-    "taxa_padrao": 5.00,
-    "pedido_minimo": 15.00,
-    "tempo_estimado_minutos": 45,
-    "bairros_atendidos": [
-      "Centro",
-      "Jardins",
-      "Vila Nova",
-      "Boa Vista",
-      "Santa Cruz"
-    ]
-  },
-  
+
   "mensagens": {
-    "boas_vindas": "Olá! 👋 Bem-vindo(a) à *Chica Tudo Lanches*!\n\nEstou aqui para anotar seu pedido. 🍔",
-    "cardapio_intro": "📋 Nosso cardápio:",
-    "selecao_lanches": "Digite o *número* do lanche que deseja (ex: 1 para X-Salada):\n\nOu digite o nome do lanche diretamente!",
-    "observacao_lanche": "Alguma observação para este lanche? 📝\n(Ex: sem cebola, ponto da carne, etc)\n\n_Digite *não* ou *0* se não tiver._",
-    "adicionar_mais": "Deseja adicionar mais algum lanche? 🍔\n\nDigite *sim* para continuar ou *não* para finalizar.",
-    "bebidas": "Quer alguma bebida? 🥤",
-    "cardapio_bebidas": "📋 Nossas bebidas:",
-    "tipo_entrega": "Como deseja receber seu pedido? 🚗\n\n*1* - Retirar no local\n*2* - Entrega (taxa de R$ {taxa})",
-    "endereco_entrega": "Por favor, informe seu endereço completo:\n\n_Rua, número, bairro e ponto de referência_",
-    "forma_pagamento": "Qual a forma de pagamento? 💳\n\n*1* - Dinheiro 💵\n*2* - PIX 📱\n*3* - Cartão 💳",
-    "troco": "Precisa de troco? 💰\n\nSe sim, digite o valor que vai pagar.\nSe não precisa, digite *0* ou *não*.",
-    "confirmacao": "✅ *Confirme seu pedido:*\n\n{resumo_pedido}\n\n━━━━━━━━━━━━━━━━\n💰 *Total: R$ {total}*\n━━━━━━━━━━━━━━━━\n\nDigite *OK* para confirmar ou *CANCELAR* para desistir.",
-    "pedido_confirmado": "🎉 *Pedido #{numero} confirmado!*\n\nEstamos preparando com carinho!\n⏱ Tempo estimado: *{tempo} minutos*\n\nVocê receberá uma mensagem quando estiver pronto! 😊",
-    "pedido_pronto": "✅ Seu pedido *#{numero}* está pronto!\n\n{tipo_entrega_msg}\n\nObrigado pela preferência! 🙏",
-    "erro_generico": "Ops! Não entendi. 😅\n\nTente novamente ou digite *ajuda*.",
-    "fora_horario": "⏰ Desculpe, estamos fechados agora!\n\nNosso horário de funcionamento:\n{horarios}\n\nVolte depois! 😊"
+    "boas_vindas": "Olá! 👋 Bem-vindo ao *Chica-Tudo*!\n\nEstou aqui para anotar seu pedido. 🍔",
+    "enviar_cardapio": "📋 Aqui está nosso cardápio completo!\n\n_Digite o nome dos itens que deseja, separados por vírgula._\n\nEx: xbacon, hot duplo..",
+    "observacoes": "📝 Alguma observação?\n\n_Ex: sem cebola no xbacon, bem passado._\n_Digite \"NÃO\" se não tiver._",
+    "bebidas": "🥤 Quer alguma bebida?\n\n_Digite os nomes, ou \"NÃO\" para pular._",
+    "tipo_entrega": "Como deseja receber? 🚗\n\n*1* - Retirar no local 📍\n*2* - Delivery (+R$ 0,00) 🏠",
+    "endereco": "📍 Informe seu endereço completo:\n_Rua, número, bairro e referência_",
+    "pagamento": "Forma de pagamento? 💳\n\n*1* - Dinheiro 💵\n*2* - PIX 📱\n*3* - Cartão 💳",
+    "troco": "Precisa de troco? 💰\n\n_Digite o valor que vai pagar ou \"NÃO\"._",
+    "pedido_confirmado": "🎉 Pedido #{numero} confirmado!\n\n⏱ Estamos preparando!\nVocê receberá uma mensagem quando estiver pronto!"
   }
 }

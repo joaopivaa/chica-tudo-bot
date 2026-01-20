@@ -1,12 +1,9 @@
-// backend/src/core/MaquinaEstados.js
-
 const AnalisadorMensagem = require('./AnalisadorMensagem');
 const GerenciadorPedidos = require('./GerenciadorPedidos');
 const cardapio = require('../config/cardapio.json');
 
-/**
- * Estados possíveis do fluxo conversacional
- */
+/* ESTADOS DO FLUXO DE CONVERSA */
+
 const ESTADOS = {
   OCIOSO: 'ocioso',                       // Aguardando primeiro contato
   SAUDACAO: 'saudacao',                   // Saudação enviada
@@ -47,7 +44,7 @@ class MaquinaEstados {
     this.iniciarLimpezaSessoes();
   }
 
-  /**
+  /*
    * Ponto de entrada: recebe mensagem do WhatsApp e roteia para handler correto
    */
   async processarMensagem(telefone, mensagem) {
@@ -84,7 +81,7 @@ class MaquinaEstados {
     }
   }
 
-  /**
+  /*
    * Roteia mensagem para o handler apropriado baseado no estado
    */
   async rotearEstado(sessao, mensagem) {
@@ -114,7 +111,7 @@ class MaquinaEstados {
     return await handler.call(this, sessao, mensagem);
   }
 
-  /**
+  /*
    * HANDLERS DE CADA ESTADO
    */
 
@@ -423,7 +420,7 @@ class MaquinaEstados {
     };
   }
 
-  /**
+  /*
    * MÉTODOS AUXILIARES
    */
 
